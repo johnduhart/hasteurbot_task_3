@@ -11,7 +11,7 @@ output.
 
 These parameters are supported to specify which pages titles to print:
 
-&params;
+python evaluate_diabled_cat.py -search=':AfC submissions with missing AfC template' -ns:5
 """
 #
 # (C) Pywikipedia bot team, 2005-2013
