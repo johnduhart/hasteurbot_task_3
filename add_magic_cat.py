@@ -89,7 +89,7 @@ def main(*args):
         page_text = list_page.get()
         lines = page_text.split('\n')
         list_elems = lines[1:-2]
-        summary = u"[[User:HasteurBot|HastuerBot Task 5]]: Adding maint " +\
+        summary = u"[[User:HasteurBot|HasteurBot Task 5]]: Adding maint " +\
             u"category to identified page"
         page_match = re.compile('\{\{AFC submission\|')
         page_match2 = re.compile('\{\{AfC submission\|')
