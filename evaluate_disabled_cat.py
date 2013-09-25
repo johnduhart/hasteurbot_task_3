@@ -73,7 +73,7 @@ def main(*args):
                     '',
                     art_1
                   )
-                  #article.put(art_2,comment=summary)
+                  article.put(art_2,comment=summary)
             else:
                 pywikibot.showHelp()
     finally:
