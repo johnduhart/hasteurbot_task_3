@@ -91,8 +91,7 @@ def main(*args):
         list_elems = lines[1:-2]
         summary = u"[[User:HasteurBot|HasteurBot Task 5]]: Adding maint " +\
             u"category to identified page"
-        page_match = re.compile('\{\{AFC submission\|')
-        page_match2 = re.compile('\{\{AfC submission\|')
+        page_match = re.compile('\{\{A[Ff]C submission\|')
         cat_match = re.compile('\[\[Category\:AfC submissions with missing AfC template\]\]')
         limiter = 50 - 14
         for elem in list_elems:
@@ -109,8 +108,6 @@ def main(*args):
                 continue
             page_text = ind_page.get()
             if page_match.match(page_text) is None \
-                and \
-                page_match2.match(page_text) is None \
                 and \
                 'AfC_submissions_with_missing_AfC_template' not in page_text \
                 and \
